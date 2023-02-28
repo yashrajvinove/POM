@@ -96,7 +96,35 @@ Verify Phone number already exist
 Verify Email already exist
    page should contain element        ${Successfull_msg}      Email already exist
 
+User List
+   Click Element     ${User_List}
+
+User_management_List
+   Wait Until Element Is Visible    User_management_title     User Management
+
+InputSearch
+   [Arguments]    ${UserID}
+   Input Text    ${Input_search}       ${UserID}
+
+Click_updateAction
+   Click Element    ${ClickUpdateAction}
+
+ClearIDtext
+   Clear Element Text      ${InputEmail_clear}
+
+UPdatenewID
+   [Arguments]    ${updateID}
+   Input Text       ${InputEmail_clear}           ${updateID}
+
+ClickUpdatebutton
+   Click Button    ${click_Update}
 
 
+New User Updated
+   page should contain element        ${Successfull_msg}      User updated successfully
+
+
+User created successfully
+   Page Should Contain Element      ${Successfull_msg}       User created successfully
 
 
