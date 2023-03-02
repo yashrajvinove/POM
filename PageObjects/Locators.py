@@ -33,3 +33,4 @@ Element_value = "//div[text()='yash9042@yopmail.com']"
 #property management
 Property_management = "xpath://span[text()='Property Management']"
 property_add = "xpath:(//span[text()='Add'])[2]"
+input_propertyName = "name:propertyName"
