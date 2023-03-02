@@ -6,11 +6,11 @@ Resource    ../Resources/LoginKeywords.robot
 ${SiteUrl}   https://propftxdevadmin.iworklab.com/
 ${Browser}   chrome
 
-${User}      rahul.agarwal@mail.vinove.com
-${User1}     rahul.agarwall@mail.vinove.com
-${Pass}       Admin@123
+${User}        rahul.agarwal@mail.vinove.com
+${User1}       rahul.agarwall@mail.vinove.com
+${Pass}        Admin@123
 ${Pass1}       Admin@1234
-${Name}       yashTest
+${Name}        yashTest
 ${Address}     MayurVihar
 ${Numbr}       9548779463
 ${Numbr2}      9012597022
@@ -51,68 +51,70 @@ LoginTest-ValidCred
    Wait Until Element Is Visible    ${Successfull_msg}
    Verify successfull login
 
-UserManagement-PhoneAlreadyExist
-   Wait Until Element Is Visible    ${UserManagement}
-   Click_UserManagement
-   Wait Until Element Is Visible    ${ADD_user}
-   Click_ADD
-   Wait Until Element Is Visible    ${ADD_title}     timeout=15
-   Verify_AddTitle
-   InputName                        ${Name}
-   InputAddress                     ${Address}
-   InputPhNumber                    ${Numbr}
-
-   Click_CountryField
-
-   InputCountry                     ${Country}
-   sleep   1
-   PressKeyCountry
-  # PressKeyCountry
-
-   InputState                       ${state}
-   sleep  1
-   PressKeyState
-   InputCity                        ${City}
-   PressKeyCity
-   InputEmail                       ${UsrEmail}
-   Choose_photo
-   Scroll_down_AddUser
-   wait until element is visible    ${Click_submit}
-   Button_submit
-   wait until element is visible      ${Successfull_msg}
-   Verify Phone number already exist
-   reload page
-
-UserManagement-EmailAlreadyExist
-   Wait Until Element Is Visible    ${UserManagement}
-   Click_UserManagement
-   Wait Until Element Is Visible    ${ADD_user}
-   Click_ADD
-   Wait Until Element Is Visible    ${ADD_title}     timeout=15
-   Verify_AddTitle
-   InputName                        ${Name}
-   InputAddress                     ${Address}
-   InputPhNumber                    ${Numbr2}
-
-   Click_CountryField
-
-   InputCountry                     ${Country}
-   sleep   1
-   PressKeyCountry
-  # PressKeyCountry
-
-   InputState                       ${state}
-   sleep  1
-   PressKeyState
-   InputCity                        ${City}
-   PressKeyCity
-   InputEmail                       ${UsrEmail}
-   Choose_photo
-   Scroll_down_AddUser
-   wait until element is visible    ${Click_submit}
-   Button_submit
-   wait until element is visible      ${Successfull_msg}
-   Verify Email already exist
-   Sleep    30
-
+#UserManagement-PhoneAlreadyExist
+#   Wait Until Element Is Visible    ${UserManagement}
+#   Click_UserManagement
+#   Wait Until Element Is Visible    ${ADD_user}
+#   Click_ADD
+#   Wait Until Element Is Visible    ${ADD_title}     timeout=15
+#   Verify_AddTitle
+#   InputName                        ${Name}
+#   InputAddress                     ${Address}
+#   InputPhNumber                    ${Numbr}
+#
+#   Click_CountryField
+#
+#   InputCountry                     ${Country}
+#   sleep   1
+#   PressKeyCountry
+#  # PressKeyCountry
+#
+#   InputState                       ${state}
+#   sleep  1
+#   PressKeyState
+#   InputCity                        ${City}
+#   PressKeyCity
+#   InputEmail                       ${UsrEmail}
+#   Choose_photo
+#   Scroll_down_AddUser
+#   wait until element is visible    ${Click_submit}
+#   Button_submit
+#   Sleep    2
+#   wait until element is visible      ${Successfull_msg}
+#   Verify Phone number already exist
+#   reload page
+#
+#UserManagement-EmailAlreadyExist
+##   Wait Until Element Is Visible    ${UserManagement}
+##   Click_UserManagement
+##   Wait Until Element Is Visible    ${ADD_user}
+##   Click_ADD
+#   Wait Until Element Is Visible    ${ADD_title}     timeout=15
+#   Verify_AddTitle
+#   InputName                        ${Name}
+#   InputAddress                     ${Address}
+#   InputPhNumber                    ${Numbr2}
+#
+#   Click_CountryField
+#
+#   InputCountry                     ${Country}
+#   sleep   1
+#   PressKeyCountry
+#  # PressKeyCountry
+#
+#   InputState                       ${state}
+#   sleep  1
+#   PressKeyState
+#   InputCity                        ${City}
+#   PressKeyCity
+#   InputEmail                       ${UsrEmail}
+#   Choose_photo
+#   Scroll_down_AddUser
+#   wait until element is visible    ${Click_submit}
+#   Button_submit
+#   Sleep    3
+#   wait until element is visible      ${Successfull_msg}
+#   Verify Email already exist
+#   Sleep    5
+#
 

@@ -110,11 +110,14 @@ Click_updateAction
    Click Element    ${ClickUpdateAction}
 
 ClearIDtext
-   Clear Element Text      ${InputEmail_clear}
+   Clear Element Text          ${InputEmail_clear}
 
 UPdatenewID
    [Arguments]    ${updateID}
    Input Text       ${InputEmail_clear}           ${updateID}
+
+Scroll_down_UpdateUser
+   Run Keyword And Ignore Error  Scroll Element Into View     ${click_Update}
 
 ClickUpdatebutton
    Click Button    ${click_Update}
@@ -126,5 +129,31 @@ New User Updated
 
 User created successfully
    Page Should Contain Element      ${Successfull_msg}       User created successfully
+
+
+get_text_user
+#     Get Text     ${Element_contain}
+     ${text}     Page Should Contain Element           ${Element_contain}      //div[contains(text(),'yash')]
+     Run Keyword If             ${text}      =      "//div[contains(text(),'yash')]"
+     Log To Console    updated successfully
+
+#     ${elem} =   Get WebElements      ${Element_contain}
+#     Log To Console     ${elem}
+
+uPdatedID_verify
+    # ${value} =  Page Should Contain Element    ${Element_value}        yash9042@yopmail.com
+     Run Keyword If        ${Element_value}     =             yash9042@yopmail.com
+     Log To Console            email update successfully
+
+#    ELSE
+#              Log     email is not updated
+
+Click_Property_management
+    Click Element            ${Property_management}
+
+
+
+
+
 
 
