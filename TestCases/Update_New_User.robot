@@ -8,8 +8,8 @@ ${Browser}   chrome
 
 ${User}      rahul.agarwal@mail.vinove.com
 ${Pass}       Admin@123
-${userSearch}     yash9051@yopmail.com
-${NewUserID}      yash9052@yopmail.com
+${userSearch}     yash9053@yopmail.com
+${NewUserID}      yash9054@yopmail.com
 ${Name}       yashTestxyz
 ${Address}     Ghaziabad
 ${Numbr}       9548779463
