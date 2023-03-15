@@ -33,6 +33,10 @@ ${Tenancy_naame}          YashRaj
 ${Lockperiod}          1
 ${Leaseperiod}         2
 ${Pricefeet}        23
+${NoBuilder}          45
+${Dscrption}           67
+
+
 *** Test Cases ***
 PropertyManagement
    Open Browser          ${SiteUrl}    ${Browser}
@@ -150,6 +154,17 @@ PropertyManagement
    Sleep    2
    Input_Prop_Input_PriceSquareFeet        ${Pricefeet}
    Click_Propsave4
+   Wait Until Element Is Visible         ${NameOfBuilder}          timeout=15
+   Input_Prop_Input_NameOfBuilder      ${NoBuilder}
+   Input_Prop_Input_Description            ${Dscrption}
+   Sleep    2
+   Click_Prop_CountryField3
+   Selected_Prop_CountryField3
+   PressKey_Prop_Country3
+   InputProp_State3
+   PressKeyProp_State3
+   InputProp_City3
+   PressKeyProp_City3
 
    sleep     10
 

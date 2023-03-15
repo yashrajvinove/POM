@@ -402,18 +402,19 @@ Input_Prop_Input_Description
 
 
 Click_Prop_CountryField3
-    Click Element            ${ClickCountry}
+    Click Element            ${ClickCountry3}
 
-Input_Prop_Country3
-    [Arguments]     ${Country}
-    input text      ${Input_Prop_country}     ${Country}
+Selected_Prop_CountryField3
+   Mouse Down      ${selectedCountry3}
+   Mouse Up         ${selectedCountry3}
 
 PressKey_Prop_Country3
-     Press Keys     ${Selected_Prop_country}        Tab
+     Press Keys     ${selectedCountry3}        Tab
 
 InputProp_State3
-    [Arguments]     ${State}
-    input text      ${Input_Prop_state}     ${State}
+   Mouse Down      ${Selected_state3}
+   Mouse Up         ${Selected_state3}
+
 
 PressKeyProp_State3
      Press Keys      ${Selected_Prop_state}        TAB
