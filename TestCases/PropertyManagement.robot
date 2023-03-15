@@ -27,8 +27,12 @@ ${BlockNO.}           D
 ${TokenNO.}            123
 ${Price}               50
 ${TotalToken}          2
-${PriceINR}            1000000
-${yeild}               12
+${PriceINRR}            1000
+${yeildD}               12
+${Tenancy_naame}          YashRaj
+${Lockperiod}          1
+${Leaseperiod}         2
+${Pricefeet}        23
 *** Test Cases ***
 PropertyManagement
    Open Browser          ${SiteUrl}    ${Browser}
@@ -63,8 +67,9 @@ PropertyManagement
    InputZip_Code                     ${Code}
    Choose_propPhoto
    Scroll_down_SaveProp_button1
-   wait until element is visible      ${SaveButton}       timeout=5
-   sleep    2
+
+   wait until element is visible      ${SaveButton}       timeout=10
+   sleep    5
    Click_Propsave1
    wait until element is visible     ${Choose_PropCoverPhoto}
    Choose_propCoverPhoto
@@ -120,7 +125,7 @@ PropertyManagement
 #   Input_Prop_BlockName         ${BlockNO.}
 #   ClickDirection
 #   selectDirection
-   Input_Prop_Input_Token            ${TokenNO.}
+   Input_Prop_Input_Token                 ${TokenNO.}
    Input_Prop_Input_StartingPrice           ${Price}
 
    Scroll_down_SaveProp_button3
@@ -130,11 +135,21 @@ PropertyManagement
    Scroll_down_SaveProp_button3
    Sleep    2
    Input_Prop_Input_TotalTokens       ${TotalToken}
-   Input_Prop_Input_PriceINR             ${PriceINR}
-   Input_Prop_Input_yeild               ${yeild}
+   Input_Prop_Input_PriceINR             ${PriceINRR}
+   Input_Prop_Input_yeild               ${yeildD}
    Scroll_down_SaveProp_button3
    wait until element is visible         ${saveButton3}
    Click_Propsave3
+   Wait Until Element Is Visible        ${Tenancy_Name}      timeout=15
+   Sleep    10
+   Input_Prop_Input_Tenancy_Name        ${Tenancy_naame}
+   Sleep    2
+   Input_Prop_Input_LockInPeriod        ${Lockperiod}
+   Sleep    2
+   Input_Prop_Input_LeaseInPeriod        ${Leaseperiod}
+   Sleep    2
+   Input_Prop_Input_PriceSquareFeet        ${Pricefeet}
+   Click_Propsave4
 
    sleep     10
 

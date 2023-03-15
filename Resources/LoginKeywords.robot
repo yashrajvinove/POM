@@ -3,6 +3,7 @@ Library     SeleniumLibrary
 Variables    ../PageObjects/Locators.py
 Library     SeleniumLibrary
 Variables    ../PageObjects/Locators.py
+
 *** Keywords ***
 #Open my Browser
 #     [Arguments]  ${SiteUrl}   ${Browser}
@@ -353,12 +354,12 @@ Input_Prop_Input_TotalTokens
 
 
 Input_Prop_Input_PriceINR
-    [Arguments]     ${PriceINR}
-    input text      ${PriceInr}      ${PriceINR}
+    [Arguments]     ${PriceINRRR}
+    input text      ${PriceInr}      ${PriceINRRR}
 
 Input_Prop_Input_yeild
-    [Arguments]     ${yeild}
-    input text      ${Yeild}      ${yeild}
+    [Arguments]     ${yeildD}
+    input text      ${Yeild}      ${yeildD}
 
 
 
@@ -370,16 +371,59 @@ Scroll_down_SaveProp_button3
    Run Keyword And Ignore Error  Scroll Element Into View     ${saveButton3}
 
 
+Input_Prop_Input_Tenancy_Name
+    [Arguments]     ${TName}
+    input text      ${Tenancy_Name}      ${TName}
+
+Input_Prop_Input_LockInPeriod
+    [Arguments]     ${LoPeriod}
+    input text      ${LockInPeriod}      ${LoPeriod}
 
 
+Input_Prop_Input_LeaseInPeriod
+    [Arguments]     ${LePeriod}
+    input text      ${LeaseInPeriod}      ${LePeriod}
+
+Input_Prop_Input_PriceSquareFeet
+    [Arguments]     ${PFeet}
+    input text      ${PriceSquareFeet}      ${PFeet}
+
+Click_Propsave4
+   click element      ${saveButton4}
 
 
+Input_Prop_Input_NameOfBuilder
+    [Arguments]     ${Name_Builder}
+    input text      ${NameOfBuilder}      ${Name_Builder}
+
+Input_Prop_Input_Description
+    [Arguments]     ${Dsrptn}
+    input text      ${Description}       ${Dsrptn}
 
 
+Click_Prop_CountryField3
+    Click Element            ${ClickCountry}
 
+Input_Prop_Country3
+    [Arguments]     ${Country}
+    input text      ${Input_Prop_country}     ${Country}
 
+PressKey_Prop_Country3
+     Press Keys     ${Selected_Prop_country}        Tab
 
+InputProp_State3
+    [Arguments]     ${State}
+    input text      ${Input_Prop_state}     ${State}
 
+PressKeyProp_State3
+     Press Keys      ${Selected_Prop_state}        TAB
+
+InputProp_City3
+    [Arguments]     ${City}
+    input text      ${Input_Prop_city}     ${City}
+
+PressKeyProp_City3
+     Press Keys      ${Selected_Prop_city}        TAB
 
 
 
