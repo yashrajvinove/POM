@@ -1,11 +1,10 @@
 *** Settings ***
 Library    SeleniumLibrary
 Resource    ../Resources/LoginKeywords.robot
-Library    SeleniumLibrary
-Resource    ../Resources/LoginKeywords.robot
+
 *** Variables ***
 ${SiteUrl}     https://propftxdevadmin.iworklab.com/
-${Browser}     chrome
+${Browser}     edge
 ${User}        rahul.agarwal@mail.vinove.com
 ${Pass}        Admin@123
 ${PropertyName}    Fusion Square
@@ -144,7 +143,7 @@ PropertyManagement
    Scroll_down_SaveProp_button3
    wait until element is visible         ${saveButton3}
    Click_Propsave3
-   Wait Until Element Is Visible        ${Tenancy_Name}      timeout=15
+   Wait Until Element Is Visible        ${Tenancy_Name}      timeout=20
    Sleep    10
    Input_Prop_Input_Tenancy_Name        ${Tenancy_naame}
    Sleep    2
@@ -157,9 +156,15 @@ PropertyManagement
    Wait Until Element Is Visible         ${NameOfBuilder}          timeout=15
    Input_Prop_Input_NameOfBuilder      ${NoBuilder}
    Input_Prop_Input_Description            ${Dscrption}
-   Sleep    2
-   Click_Prop_CountryField3
-   Selected_Prop_CountryField3
+   Sleep    4
+   country_click3
+   Sleep    3
+  # Wait Until Element Is Visible         ${selectedCountry3}
+
+  # Input_Prop_Input_country3               ${Country}
+   Input_Prop_Input_country3
+  # Selected_Prop_CountryField3
+
    PressKey_Prop_Country3
    InputProp_State3
    PressKeyProp_State3

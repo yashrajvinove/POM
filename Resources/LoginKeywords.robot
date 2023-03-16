@@ -3,7 +3,8 @@ Library     SeleniumLibrary
 Variables    ../PageObjects/Locators.py
 Library     SeleniumLibrary
 Variables    ../PageObjects/Locators.py
-
+Library     SeleniumLibrary
+Variables    ../PageObjects/Locators.py
 *** Keywords ***
 #Open my Browser
 #     [Arguments]  ${SiteUrl}   ${Browser}
@@ -401,12 +402,16 @@ Input_Prop_Input_Description
     input text      ${Description}       ${Dsrptn}
 
 
-Click_Prop_CountryField3
-    Click Element            ${ClickCountry3}
+country_click3
+    Click Element              ${ClickCtry3}
+
+Input_Prop_Input_country3
+    [Arguments]     ${coutry33}
+    input text      ${Input_country3}       ${coutry33}
 
 Selected_Prop_CountryField3
-   Mouse Down      ${selectedCountry3}
-   Mouse Up         ${selectedCountry3}
+   Mouse Down           ${Input_country3}
+   Mouse Up               ${Input_country3}
 
 PressKey_Prop_Country3
      Press Keys     ${selectedCountry3}        Tab
