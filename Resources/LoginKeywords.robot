@@ -399,15 +399,18 @@ Input_Prop_Input_NameOfBuilder
 
 Input_Prop_Input_Description
     [Arguments]     ${Dsrptn}
-    input text      ${Description}       ${Dsrptn}
+    input text      ${Descriptionn}       ${Dsrptn}
 
+PressKey_Prop_Description
+     Press Keys            ${Descriptionn}       TAB
 
 country_click3
     Click Element              ${ClickCtry3}
 
-Input_Prop_Input_country3
-    [Arguments]     ${coutry33}
-    input text      ${Input_country3}       ${coutry33}
+Input_Prop_Input_country34
+
+    [Arguments]     ${Country34}
+    input text      ${Input_country34}     ${Country34}
 
 Selected_Prop_CountryField3
    Mouse Down           ${Input_country3}
@@ -432,6 +435,40 @@ PressKeyProp_City3
      Press Keys      ${Selected_Prop_city}        TAB
 
 
+clubMembership
+    Click Element              ${click_clubMembership}
+
+clubPlans
+    Click Element              ${click_plans}
+
+clubADD
+    Click Element              ${click_Club_ADD}
+
+PlanName1
+    [Arguments]     ${PlanNamexyz}
+    input text      ${plan_Name}     ${PlanNamexyz}
+
+clickValidity1
+    Click Element              ${validity_click}
+
+InputValidity1
+    [Arguments]     ${Validity2}
+    input text      ${validity_input}     ${Validity2}
 
 
+PressKeyValidity
+     Press Keys      ${validity_input}        TAB
 
+InputClub_price
+    [Arguments]     ${pricexyz}
+    input text      ${ClubPrice}    ${pricexyz}
+
+InputClub_discount
+    [Arguments]     ${Discountxyz}
+    input text      ${ClubDiscount}    ${Discountxyz}
+
+clickSavebuttonClub
+    Click Element              ${savebuttonClub}
+
+ClubAddedSuccessfully
+   Page Should Contain Element            ${successfullyPlanADDed}         New plan added successfully

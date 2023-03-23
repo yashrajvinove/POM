@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230316 17:01:28.484" rpa="false" schemaversion="3">
-<suite id="s1" name="PropertyManagement" source="C:\Users\Yash Raj singh\PycharmProjects\POMM\TestCases\PropertyManagement.robot">
-<test id="s1-t1" name="PropertyManagement" line="40">
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230323 14:42:44.961" rpa="false" schemaversion="3">
+<suite id="s1" name="Club Membership" source="C:\Users\Yash Raj singh\PycharmProjects\POMM\TestCases\club_membership.robot">
+<test id="s1-t1" name="clubMembership" line="16">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${SiteUrl}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230316 17:01:28.828" level="INFO">Opening browser 'edge' to base url 'https://propftxdevadmin.iworklab.com/'.</msg>
-<status status="PASS" starttime="20230316 17:01:28.828" endtime="20230316 17:01:31.962"/>
+<msg timestamp="20230323 14:42:45.257" level="INFO">Opening browser 'edge' to base url 'https://propftxdevadmin.iworklab.com/'.</msg>
+<status status="PASS" starttime="20230323 14:42:45.257" endtime="20230323 14:42:50.991"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230316 17:01:31.965" endtime="20230316 17:01:32.117"/>
+<status status="PASS" starttime="20230323 14:42:50.991" endtime="20230323 14:42:51.147"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>4</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230316 17:01:36.118" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" starttime="20230316 17:01:32.118" endtime="20230316 17:01:36.118"/>
+<msg timestamp="20230323 14:42:55.153" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20230323 14:42:51.153" endtime="20230323 14:42:55.153"/>
 </kw>
 <kw name="Enter Username" library="LoginKeywords">
 <arg>${User}</arg>
@@ -25,10 +25,10 @@
 <arg>${Input_UserNamee}</arg>
 <arg>${Username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230316 17:01:36.118" level="INFO">Typing text 'rahul.agarwal@mail.vinove.com' into text field '//input[@name='loginEmail']'.</msg>
-<status status="PASS" starttime="20230316 17:01:36.118" endtime="20230316 17:01:36.251"/>
+<msg timestamp="20230323 14:42:55.155" level="INFO">Typing text 'rahul.agarwal@mail.vinove.com' into text field '//input[@name='loginEmail']'.</msg>
+<status status="PASS" starttime="20230323 14:42:55.154" endtime="20230323 14:42:55.284"/>
 </kw>
-<status status="PASS" starttime="20230316 17:01:36.118" endtime="20230316 17:01:36.251"/>
+<status status="PASS" starttime="20230323 14:42:55.153" endtime="20230323 14:42:55.284"/>
 </kw>
 <kw name="Enter Password" library="LoginKeywords">
 <arg>${Pass}</arg>
@@ -36,470 +36,188 @@
 <arg>${Input_password}</arg>
 <arg>${Password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230316 17:01:36.252" level="INFO">Typing text 'Admin@123' into text field 'name:password'.</msg>
-<status status="PASS" starttime="20230316 17:01:36.252" endtime="20230316 17:01:36.362"/>
+<msg timestamp="20230323 14:42:55.286" level="INFO">Typing text 'Admin@123' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20230323 14:42:55.285" endtime="20230323 14:42:55.396"/>
 </kw>
-<status status="PASS" starttime="20230316 17:01:36.251" endtime="20230316 17:01:36.363"/>
+<status status="PASS" starttime="20230323 14:42:55.285" endtime="20230323 14:42:55.396"/>
 </kw>
 <kw name="Click_Buton" library="LoginKeywords">
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${Click_Button}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230316 17:01:36.364" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
-<status status="PASS" starttime="20230316 17:01:36.363" endtime="20230316 17:01:36.440"/>
+<msg timestamp="20230323 14:42:55.397" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<status status="PASS" starttime="20230323 14:42:55.397" endtime="20230323 14:42:55.533"/>
 </kw>
-<status status="PASS" starttime="20230316 17:01:36.363" endtime="20230316 17:01:36.441"/>
+<status status="PASS" starttime="20230323 14:42:55.396" endtime="20230323 14:42:55.534"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230316 17:01:39.457" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230316 17:01:36.456" endtime="20230316 17:01:39.457"/>
+<msg timestamp="20230323 14:42:58.540" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230323 14:42:55.539" endtime="20230323 14:42:58.540"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${Property_management}</arg>
+<arg>${click_clubMembership}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<msg timestamp="20230316 17:01:44.817" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-532.png"&gt;&lt;img src="selenium-screenshot-532.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230316 17:01:44.817" level="FAIL">Element 'xpath://span[text()='Property Management']' not visible after 5 seconds.</msg>
-<status status="FAIL" starttime="20230316 17:01:39.457" endtime="20230316 17:01:44.817"/>
+<status status="PASS" starttime="20230323 14:42:58.542" endtime="20230323 14:42:58.578"/>
 </kw>
-<kw name="Click_Property_management" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
+<kw name="clubMembership" library="LoginKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_clubMembership}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230323 14:42:58.580" level="INFO">Clicking element '//span[text()='Club Membership']'.</msg>
+<status status="PASS" starttime="20230323 14:42:58.579" endtime="20230323 14:42:58.637"/>
+</kw>
+<status status="PASS" starttime="20230323 14:42:58.579" endtime="20230323 14:42:58.637"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${property_add}</arg>
+<arg>${click_plans}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
+<status status="PASS" starttime="20230323 14:42:58.637" endtime="20230323 14:42:58.883"/>
 </kw>
-<kw name="Click_Property_ADD" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
+<kw name="clubPlans" library="LoginKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_plans}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230323 14:42:58.885" level="INFO">Clicking element '//span[text()='Plans']'.</msg>
+<status status="PASS" starttime="20230323 14:42:58.884" endtime="20230323 14:42:58.934"/>
+</kw>
+<status status="PASS" starttime="20230323 14:42:58.884" endtime="20230323 14:42:58.934"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${input_propertyName}</arg>
-<arg>timeout=15</arg>
+<arg>${click_Club_ADD}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
+<status status="PASS" starttime="20230323 14:42:58.934" endtime="20230323 14:42:59.179"/>
 </kw>
-<kw name="InputPropertyName" library="LoginKeywords">
-<arg>${PropertyName}</arg>
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
+<kw name="clubADD" library="LoginKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_Club_ADD}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230323 14:42:59.179" level="INFO">Clicking element '(//span[text()='Add'])[3]'.</msg>
+<status status="PASS" starttime="20230323 14:42:59.179" endtime="20230323 14:42:59.261"/>
 </kw>
-<kw name="Click_propType" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
-</kw>
-<kw name="InputPropertype" library="LoginKeywords">
-<arg>${PropertyType}</arg>
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
-</kw>
-<kw name="PressKeyPropertyType" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
-</kw>
-<kw name="InputProperNumber" library="LoginKeywords">
-<arg>${propNumber}</arg>
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
-</kw>
-<kw name="InputProperLocation" library="LoginKeywords">
-<arg>${proplocation}</arg>
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
-</kw>
-<kw name="Click_Prop_CountryField" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
-</kw>
-<kw name="Input_Prop_Country" library="LoginKeywords">
-<arg>${Country}</arg>
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
-</kw>
-<kw name="PressKey_Prop_Country" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
-</kw>
-<kw name="InputProp_State" library="LoginKeywords">
-<arg>${state}</arg>
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
-</kw>
-<kw name="PressKeyProp_State" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
-</kw>
-<kw name="InputProp_City" library="LoginKeywords">
-<arg>${City}</arg>
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
-</kw>
-<kw name="PressKeyProp_City" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
-</kw>
-<kw name="InputZip_Code" library="LoginKeywords">
-<arg>${Code}</arg>
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
-</kw>
-<kw name="Choose_propPhoto" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
-</kw>
-<kw name="Scroll_down_SaveProp_button1" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
+<status status="PASS" starttime="20230323 14:42:59.179" endtime="20230323 14:42:59.261"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${SaveButton}</arg>
+<arg>${plan_Name}</arg>
 <arg>timeout=10</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
+<status status="PASS" starttime="20230323 14:42:59.262" endtime="20230323 14:42:59.756"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
+<kw name="PlanName1" library="LoginKeywords">
+<arg>${PlanName2}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${plan_Name}</arg>
+<arg>${PlanNamexyz}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230323 14:42:59.758" level="INFO">Typing text 'xyz' into text field 'xpath://input[@id='planTitle']'.</msg>
+<status status="PASS" starttime="20230323 14:42:59.757" endtime="20230323 14:42:59.848"/>
 </kw>
-<kw name="Click_Propsave1" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
+<status status="PASS" starttime="20230323 14:42:59.756" endtime="20230323 14:42:59.849"/>
 </kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${Choose_PropCoverPhoto}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
+<kw name="clickValidity1" library="LoginKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${validity_click}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230323 14:42:59.850" level="INFO">Clicking element '//div[@class='select__input-container css-ackcql']'.</msg>
+<status status="PASS" starttime="20230323 14:42:59.850" endtime="20230323 14:42:59.933"/>
 </kw>
-<kw name="Choose_propCoverPhoto" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
+<status status="PASS" starttime="20230323 14:42:59.849" endtime="20230323 14:42:59.934"/>
 </kw>
-<kw name="Scroll_down_SaveProp_button2" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
+<kw name="InputValidity1" library="LoginKeywords">
+<arg>${Validity3}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${validity_input}</arg>
+<arg>${Validity2}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230323 14:42:59.937" level="INFO">Typing text 'Monthly' into text field '//input[@class='select__input']'.</msg>
+<status status="PASS" starttime="20230323 14:42:59.937" endtime="20230323 14:43:00.146"/>
 </kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${Choose_PropPDF}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
-</kw>
-<kw name="Choose_propCoverPdf" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
-</kw>
-<kw name="Scroll_down_SaveProp_button2" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
+<status status="PASS" starttime="20230323 14:42:59.936" endtime="20230323 14:43:00.146"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
+<msg timestamp="20230323 14:43:02.147" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230323 14:43:00.146" endtime="20230323 14:43:02.147"/>
 </kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${SaveButton2}</arg>
-<arg>timeout=5</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
+<kw name="PressKeyValidity" library="LoginKeywords">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${validity_input}</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230323 14:43:02.150" level="INFO">Sending key(s) ('TAB',) to //input[@class='select__input'] element.</msg>
+<msg timestamp="20230323 14:43:02.452" level="INFO">Pressing special key TAB to element.</msg>
+<msg timestamp="20230323 14:43:02.452" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20230323 14:43:02.148" endtime="20230323 14:43:02.466"/>
 </kw>
-<kw name="Click_Propsave2" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
+<status status="PASS" starttime="20230323 14:43:02.148" endtime="20230323 14:43:02.466"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
+<kw name="InputClub_price" library="LoginKeywords">
+<arg>${Price1}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${ClubPrice}</arg>
+<arg>${pricexyz}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230323 14:43:02.468" level="INFO">Typing text '2542' into text field '//input[@id='price']'.</msg>
+<status status="PASS" starttime="20230323 14:43:02.467" endtime="20230323 14:43:02.584"/>
 </kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${Click_salesStatus}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
+<status status="PASS" starttime="20230323 14:43:02.467" endtime="20230323 14:43:02.584"/>
 </kw>
-<kw name="Click_Prop_SalesStatus" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
+<kw name="InputClub_discount" library="LoginKeywords">
+<arg>${Disocunt1}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${ClubDiscount}</arg>
+<arg>${Discountxyz}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230323 14:43:02.585" level="INFO">Typing text '42' into text field '//input[@id='discount']'.</msg>
+<status status="PASS" starttime="20230323 14:43:02.585" endtime="20230323 14:43:02.682"/>
+</kw>
+<status status="PASS" starttime="20230323 14:43:02.584" endtime="20230323 14:43:02.682"/>
+</kw>
+<kw name="clickSavebuttonClub" library="LoginKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${savebuttonClub}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230323 14:43:02.684" level="INFO">Clicking element '//button[text()='Save']'.</msg>
+<status status="PASS" starttime="20230323 14:43:02.683" endtime="20230323 14:43:02.737"/>
+</kw>
+<status status="PASS" starttime="20230323 14:43:02.683" endtime="20230323 14:43:02.737"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
+<msg timestamp="20230323 14:43:03.738" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230323 14:43:02.737" endtime="20230323 14:43:03.738"/>
 </kw>
-<kw name="select_status" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
+<kw name="ClubAddedSuccessfully" library="LoginKeywords">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${successfullyPlanADDed}</arg>
+<arg>New plan added successfully</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20230323 14:43:03.763" level="INFO">Current page contains element '//div[@id='swal2-html-container']'.</msg>
+<status status="PASS" starttime="20230323 14:43:03.739" endtime="20230323 14:43:03.764"/>
 </kw>
-<kw name="Click_Prop_Calender" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
-</kw>
-<kw name="Select_Month_startDate" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
-</kw>
-<kw name="Clear_year_input" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
-</kw>
-<kw name="Input_Prop_StartYear" library="LoginKeywords">
-<arg>${year1}</arg>
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
+<status status="PASS" starttime="20230323 14:43:03.739" endtime="20230323 14:43:03.764"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>1</arg>
+<arg>20</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
+<msg timestamp="20230323 14:43:23.765" level="INFO">Slept 20 seconds</msg>
+<status status="PASS" starttime="20230323 14:43:03.765" endtime="20230323 14:43:23.765"/>
 </kw>
-<kw name="Start_date_select" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
-</kw>
-<kw name="Clear_year_input" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.817" endtime="20230316 17:01:44.817"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Input_Prop_StartYear" library="LoginKeywords">
-<arg>${year2}</arg>
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Select_Month_EndDate" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="End_date_select" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Click_time" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Clear_TimeElement1" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Input_Prop_Time1" library="LoginKeywords">
-<arg>${hour}</arg>
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="PressKey_hour" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Clear_TimeElement2" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Input_Prop_Time2" library="LoginKeywords">
-<arg>${Min}</arg>
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="PressKey_min" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="selectFloor" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="selectedFloor" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Input_Prop_Input_Token" library="LoginKeywords">
-<arg>${TokenNO.}</arg>
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Input_Prop_Input_StartingPrice" library="LoginKeywords">
-<arg>${Price}</arg>
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Scroll_down_SaveProp_button3" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="selectFloor2" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="selectedFloor2" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Scroll_down_SaveProp_button3" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Input_Prop_Input_TotalTokens" library="LoginKeywords">
-<arg>${TotalToken}</arg>
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Input_Prop_Input_PriceINR" library="LoginKeywords">
-<arg>${PriceINRR}</arg>
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Input_Prop_Input_yeild" library="LoginKeywords">
-<arg>${yeildD}</arg>
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Scroll_down_SaveProp_button3" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${saveButton3}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Click_Propsave3" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${Tenancy_Name}</arg>
-<arg>timeout=20</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>10</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Input_Prop_Input_Tenancy_Name" library="LoginKeywords">
-<arg>${Tenancy_naame}</arg>
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Input_Prop_Input_LockInPeriod" library="LoginKeywords">
-<arg>${Lockperiod}</arg>
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Input_Prop_Input_LeaseInPeriod" library="LoginKeywords">
-<arg>${Leaseperiod}</arg>
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Input_Prop_Input_PriceSquareFeet" library="LoginKeywords">
-<arg>${Pricefeet}</arg>
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Click_Propsave4" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${NameOfBuilder}</arg>
-<arg>timeout=15</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Input_Prop_Input_NameOfBuilder" library="LoginKeywords">
-<arg>${NoBuilder}</arg>
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Input_Prop_Input_Description" library="LoginKeywords">
-<arg>${Dscrption}</arg>
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>4</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="country_click3" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Input_Prop_Input_country3" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="PressKey_Prop_Country3" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="InputProp_State3" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="PressKeyProp_State3" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="InputProp_City3" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="PressKeyProp_City3" library="LoginKeywords">
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>10</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20230316 17:01:44.833" endtime="20230316 17:01:44.833"/>
-</kw>
-<status status="FAIL" starttime="20230316 17:01:28.828" endtime="20230316 17:01:44.849">Element 'xpath://span[text()='Property Management']' not visible after 5 seconds.</status>
+<status status="PASS" starttime="20230323 14:42:45.256" endtime="20230323 14:43:23.766"/>
 </test>
-<status status="FAIL" starttime="20230316 17:01:28.484" endtime="20230316 17:01:44.849"/>
+<status status="PASS" starttime="20230323 14:42:44.963" endtime="20230323 14:43:23.768"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="PropertyManagement">PropertyManagement</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Club Membership">Club Membership</stat>
 </suite>
 </statistics>
 <errors>

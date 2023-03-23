@@ -2,6 +2,7 @@
 Library    SeleniumLibrary
 Resource    ../Resources/LoginKeywords.robot
 
+
 *** Variables ***
 ${SiteUrl}     https://propftxdevadmin.iworklab.com/
 ${Browser}     edge
@@ -12,6 +13,7 @@ ${PropertyType}     Commercial
 ${propNumber}       1
 ${proplocation}      Noida
 ${Country}     Afghanistan
+${Countryy4}     Afghanistan
 ${state}       Balkh
 ${City}        Balkh
 ${Code}        201306
@@ -39,6 +41,8 @@ ${Dscrption}           67
 *** Test Cases ***
 PropertyManagement
    Open Browser          ${SiteUrl}    ${Browser}
+
+
    Maximize Browser Window
    sleep    4
   # Wait Until Element Is Visible    ${Input_UserName}          timeout=10
@@ -157,12 +161,15 @@ PropertyManagement
    Input_Prop_Input_NameOfBuilder      ${NoBuilder}
    Input_Prop_Input_Description            ${Dscrption}
    Sleep    4
+
+ #  PressKey_Prop_Description
    country_click3
    Sleep    3
   # Wait Until Element Is Visible         ${selectedCountry3}
 
   # Input_Prop_Input_country3               ${Country}
-   Input_Prop_Input_country3
+   Wait Until Element Is Visible         ${Input_country34}                      timeout=30
+   Input_Prop_Input_country34                ${Countryy4}
   # Selected_Prop_CountryField3
 
    PressKey_Prop_Country3
