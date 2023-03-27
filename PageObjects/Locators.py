@@ -50,13 +50,14 @@ Selected_Prop_city = "xpath:(//div[text()='Balkh'])[2]"
 
 InputZipCode = "//input[@placeholder='zipCode']"
 Choose_PropImage = "id:image"
+ImageLocation   =  "C:/Users/dell/Downloads/download2121.png"
 SaveButton = "xpath:(//span[text()='Save'])[1]"
 
 Choose_PropCoverPhoto = "id:coverPhoto"
 Choose_PropPDF = "(//input[@type='file'])[3]"
 SaveButton2 = "xpath:(//span[text()='Save'])[2]"
-CoverPhotoLocation =  "C:/Users/Yash Raj singh/Downloads/download1.jpg"
-CoverPDFLocation =  "C:/Users/Yash Raj singh/Downloads/dummy-pdf_2_2.pdf"
+CoverPhotoLocation =  "C:/Users/dell/Downloads/house-4516175__340.jpg"
+CoverPDFLocation =  "C:/Users/dell/Downloads/dummy.pdf"
 
 Click_salesStatus = "xpath:(//div[@class='select__input-container css-ackcql'])[5]"
 sele_status = "//div[text()='Presale']"
